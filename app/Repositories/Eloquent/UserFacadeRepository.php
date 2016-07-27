@@ -7,9 +7,15 @@ use App\User;
 */
 class UserFacadeRepository implements UserInterface
 {
-	
-	public function allUsers()
+	/**
+	 * 根据id查找用户信息
+	 * @author 晚黎
+	 * @date   2016-07-25
+	 * @param  [type]     $id [description]
+	 * @return [type]         [description]
+	 */
+	public function findBy($id)
 	{
-		return User::all()->toArray();
+		return User::find($id);
 	}
 }

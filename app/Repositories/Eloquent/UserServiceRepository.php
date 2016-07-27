@@ -8,8 +8,8 @@ use App\User;
 class UserServiceRepository implements UserInterface
 {
 	
-	public function allUsers()
+	public function findBy($id)
 	{
-		return User::all()->toArray();
+		return User::find($id);
 	}
 }

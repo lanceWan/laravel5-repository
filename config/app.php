@@ -204,8 +204,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'UserFacadeRepo' => App\Facades\UserFacade::class,
-
+        'UserRepository' => App\Facades\UserFacade::class,
     ],
 
 ];
